@@ -17,20 +17,20 @@ class _DateTimeFieldState extends State<DateTimeField> {
 
   Widget build(BuildContext context) {
     return TextField(
-        style: TextStyle(color: Colors.white),
+        style: const TextStyle(color: Colors.white),
         cursorHeight: 0,
         keyboardType: TextInputType.none,
         controller: dateinput, //editing controller of this TextField
         decoration: InputDecoration(
           focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(5),
-              borderSide: BorderSide(color: Colors.white, width: 2)),
+              borderSide: const BorderSide(color: Colors.white, width: 2)),
           label: TextWidget(
               text: widget.datefield.toString(), color: Colors.white),
-          enabledBorder: OutlineInputBorder(
+          enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.white),
           ),
-          suffixIcon: Icon(Icons.calendar_today, color: Colors.white),
+          suffixIcon: const Icon(Icons.calendar_today, color: Colors.white),
         ),
         onTap: () async {
           DateTime? pickedDate = await showDatePicker(

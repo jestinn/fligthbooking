@@ -77,7 +77,7 @@ class _HomeFlyState extends State<HomeFly> {
                               ),
                             ],
                           ),
-                          duration: Duration(milliseconds: 300),
+                          duration: const Duration(milliseconds: 300),
                           curve: Curves.easeInToLinear,
                           onValueChanged: (v) {
                             print(v);
